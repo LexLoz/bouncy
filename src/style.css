@@ -24,7 +24,7 @@ main {
 }
 
 .block-line {
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 #bouncy-logo {
