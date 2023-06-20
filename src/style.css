@@ -1,65 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+3&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
+    font-weight: 400;
+    font-size: 17px;
 }
 
 body {
-    background: url('../img/Layer 1.png') no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
+    font-size: 20px;
     width: 100%;
     height: 100%;
-}
-
-main {
-    height: 50rem;
-}
-
-.background-blackout {
-    background-origin: border-box;
-    background-color:rgba(0, 0, 0, 0.40);
-}
-
-.block-line {
-    display: inline-block;
-}
-
-#bouncy-logo {
-    margin-left: 70px;
-}
-
-#code-cafe {
-    margin-top: 200px;
-    margin-left: 37%;
-}
-
-#slogan {
-    margin-top: 20px;
-    margin-left: 25%;
+    background: url('../img/Layer 1.png') no-repeat;
+    background-size: contain;
 }
 
 header {
-    padding-top: 40px;
+    padding-top: 3rem;
     font-family: 'Open Sans', sans-serif;
 }
 
+header img {
+    position: absolute;
+    margin-left: 5rem;
+}
+
 ul {
-    font-size: 18px;
-    text-align: left;
-    display: inline;
-    margin: 0;
-    color:white;
-    margin-left: 400px;
-    
+    font-size: 1rem;
+    text-align: right;
+    color: white;
+    padding-right: 5rem;
+
 }
 
 ul li {
     display: inline-block;
-    margin-left: 0px;
-    padding: 4px 15px;
+    padding: 0.2rem 1.1rem;
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 30px;
@@ -76,4 +53,89 @@ ul li:first-child {
 
 ul:hover li:first-child {
     border: 1px solid transparent;
+}
+
+detail {
+    display: block;
+    font-family: 'Source Sans Pro', 'sans-serif';
+    margin: 10rem auto 0;
+    color: white;
+    height: 30rem;
+    width: 35rem;
+}
+
+detail p {
+    text-align: center;
+}
+
+detail p:first-child {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+}
+
+detail p:last-child {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.background-blackout {
+    background-origin: border-box;
+    background-color: rgba(0, 0, 0, 0.40);
+    height: 40rem;
+}
+
+main {
+    background-color: white;
+    height: 30rem;
+    color:rgb(146, 146, 146);
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    padding: 5rem;
+}
+
+main div {
+    display: inline-block;
+}
+
+main div:first-child {
+    width: 35rem;
+    text-align: left;
+    line-height: 30px;
+}
+
+main div:first-child h2 {
+    letter-spacing: 3px;
+}
+
+main div:first-child h2, main div:first-child p:last-child {
+    color: rgb(90, 90, 90);
+}
+
+main div:first-child h2 {
+    font-size: 1.3rem;
+    padding-bottom: 3rem;
+}
+
+main div:first-child p:last-child {
+    margin-top: 1.5rem;
+    padding: 0.4rem 0;
+    text-align: center;
+    max-width: 10rem;
+    max-height: 10rem;
+    font-size: 1.15rem;
+    border: 1px solid rgb(90, 90, 90);
+    border-radius: 30px;
+}
+
+main img {
+    padding-left: 10rem;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/SourceSansPro-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
