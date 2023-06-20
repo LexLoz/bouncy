@@ -1,65 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
+    font-weight: 400;
+    font-size: 17px;
 }
 
 body {
-    background: url('../img/Layer 1.png') no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
+    font-size: 20px;
     width: 100%;
     height: 100%;
-}
-
-main {
-    height: 50rem;
-}
-
-.background-blackout {
-    background-origin: border-box;
-    background-color:rgba(0, 0, 0, 0.40);
-}
-
-.block-line {
-    /* display: inline-block; */
-}
-
-#bouncy-logo {
-    margin-left: 70px;
-}
-
-#code-cafe {
-    margin-top: 200px;
-    margin-left: 37%;
-}
-
-#slogan {
-    margin-top: 20px;
-    margin-left: 25%;
+    background: url('../img/Layer 1.png') no-repeat;
+    background-size: cover;
 }
 
 header {
-    padding-top: 40px;
+    padding-top: 3rem;
     font-family: 'Open Sans', sans-serif;
 }
 
+header img {
+    position: absolute;
+    margin-left: 5rem;
+}
+
 ul {
-    font-size: 18px;
-    text-align: left;
-    display: inline;
-    margin: 0;
+    font-size: 1rem;
+    text-align: right;
     color:white;
-    margin-left: 400px;
+    padding-right: 5rem;
     
 }
 
 ul li {
     display: inline-block;
-    margin-left: 0px;
-    padding: 4px 15px;
+    padding: 0.2rem 1.1rem;
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 30px;
@@ -76,4 +53,27 @@ ul li:first-child {
 
 ul:hover li:first-child {
     border: 1px solid transparent;
+}
+
+detail {
+    display: block;
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 10rem auto 0;
+    color: white;
+    width: 25rem;
+    height: 30rem;
+}
+
+detail p {
+    text-align: center;
+}
+
+detail p:first-child {
+    font-size: 2rem;
+}
+
+.background-blackout {
+    background-origin: border-box;
+    background-color:rgba(0, 0, 0, 0.40);
+    height: 50rem;
 }
